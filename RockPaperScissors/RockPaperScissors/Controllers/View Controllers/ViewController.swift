@@ -25,13 +25,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func rockButtonTapped(_ sender: Any) {
-        rockChoice()
+        bbbrockChoice()
     }
     @IBAction func paperButtonTapped(_ sender: Any) {
-        paperChoice()
+        bbbpaperChoice()
     }
     @IBAction func scissorsButtonTapped(_ sender: Any) {
-        scisscorsChoice()
+        bbbscisscorsChoice()
     }
 
     func randomComputerChoice() -> String? {
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         return choices.randomElement()
     }
     
-    func rockChoice() {
+    func bbbrockChoice() {
         guard let computerChoice = randomComputerChoice() else { return }
         yourChoiceLabel.text = "Your choice is: rock"
         computerChoiceLabel.text = "Computer choice is: " + (computerChoice)
@@ -54,7 +54,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func paperChoice() {
+    func bbbpaperChoice() {
         guard let computerChoice = randomComputerChoice() else { return }
         yourChoiceLabel.text = "Your choice is: paper"
         computerChoiceLabel.text = "Computer choice is: " + computerChoice
@@ -69,7 +69,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func scisscorsChoice() {
+    func bbbscisscorsChoice() {
         guard let computerChoice = randomComputerChoice() else { return }
         yourChoiceLabel.text = "Your choice is: scissors"
         computerChoiceLabel.text = "Computer choice is: " + computerChoice
