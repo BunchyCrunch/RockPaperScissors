@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="QtC-Lg-1JG">
-                                <rect key="frame" x="95" y="619" width="224" height="30"/>
+                                <rect key="frame" x="95" y="664.5" width="224" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAV-9n-5ge">
                                         <rect key="frame" x="0.0" y="0.0" width="58" height="30"/>
@@ -42,7 +42,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Question" translatesAutoresizingMaskIntoConstraints="NO" id="95K-sj-FZu">
-                                <rect key="frame" x="143" y="162.5" width="128" height="128"/>
+                                <rect key="frame" x="143" y="162.5" width="128" height="128.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="m0x-ej-1lQ"/>
                                     <constraint firstAttribute="width" secondItem="95K-sj-FZu" secondAttribute="height" multiplier="1:1" id="qi6-Rj-HaJ"/>
@@ -55,21 +55,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Choice: ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWN-do-BOJ">
-                                <rect key="frame" x="152" y="556" width="110" height="20.5"/>
+                                <rect key="frame" x="152" y="601.5" width="110" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Question" translatesAutoresizingMaskIntoConstraints="NO" id="PXc-1G-dVK">
-                                <rect key="frame" x="143" y="389" width="128" height="128"/>
+                                <rect key="frame" x="143" y="434.5" width="128" height="128.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="PXc-1G-dVK" secondAttribute="height" multiplier="1:1" id="jtA-Hs-hzK"/>
                                     <constraint firstAttribute="height" constant="128" id="uEp-W8-eqX"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="And the winner is...." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbC-hk-GbT">
-                                <rect key="frame" x="131.5" y="329.5" width="151" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbC-hk-GbT">
+                                <rect key="frame" x="148.5" y="340" width="117.5" height="44.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -79,11 +79,11 @@
                             <constraint firstItem="95K-sj-FZu" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.5" id="1Ee-K2-ksP"/>
                             <constraint firstItem="PXc-1G-dVK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="82d-TU-fXz"/>
                             <constraint firstItem="95K-sj-FZu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8Ai-fB-gfh"/>
-                            <constraint firstItem="QtC-Lg-1JG" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.4" id="Cdk-Ia-3DU"/>
-                            <constraint firstItem="bbC-hk-GbT" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.75" id="KCj-BP-BFT"/>
+                            <constraint firstItem="QtC-Lg-1JG" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.5" id="Cdk-Ia-3DU"/>
+                            <constraint firstItem="bbC-hk-GbT" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.8" id="KCj-BP-BFT"/>
                             <constraint firstItem="GS1-cs-ukZ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.25" id="PCu-U2-2g0"/>
-                            <constraint firstItem="QWN-do-BOJ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.25" id="REk-y2-qpW"/>
-                            <constraint firstItem="PXc-1G-dVK" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="S8i-q2-ggx"/>
+                            <constraint firstItem="QWN-do-BOJ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.35" id="REk-y2-qpW"/>
+                            <constraint firstItem="PXc-1G-dVK" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.1" id="S8i-q2-ggx"/>
                             <constraint firstItem="bbC-hk-GbT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dd3-8w-bUq"/>
                             <constraint firstItem="QtC-Lg-1JG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" id="mjV-OL-EpW"/>
                             <constraint firstItem="QtC-Lg-1JG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nQS-9o-yz4"/>
