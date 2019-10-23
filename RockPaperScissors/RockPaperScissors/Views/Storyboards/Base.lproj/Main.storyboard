@@ -14,7 +14,73 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="QtC-Lg-1JG">
+                                <rect key="frame" x="95" y="619" width="224" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAV-9n-5ge">
+                                        <rect key="frame" x="0.0" y="0.0" width="58" height="30"/>
+                                        <state key="normal" title="Rock"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZS1-Qy-a18">
+                                        <rect key="frame" x="83" y="0.0" width="58" height="30"/>
+                                        <state key="normal" title="Paper"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeT-rQ-SDW">
+                                        <rect key="frame" x="166" y="0.0" width="58" height="30"/>
+                                        <state key="normal" title="Scissors"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="95K-sj-FZu">
+                                <rect key="frame" x="143" y="162.5" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="m0x-ej-1lQ"/>
+                                    <constraint firstAttribute="width" secondItem="95K-sj-FZu" secondAttribute="height" multiplier="1:1" id="qi6-Rj-HaJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer Choice: ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GS1-cs-ukZ">
+                                <rect key="frame" x="131" y="103" width="152" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Choice: ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWN-do-BOJ">
+                                <rect key="frame" x="152" y="556" width="110" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PXc-1G-dVK">
+                                <rect key="frame" x="143" y="389" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PXc-1G-dVK" secondAttribute="height" multiplier="1:1" id="jtA-Hs-hzK"/>
+                                    <constraint firstAttribute="height" constant="128" id="uEp-W8-eqX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="And the winner is...." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbC-hk-GbT">
+                                <rect key="frame" x="131.5" y="329.5" width="151" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="95K-sj-FZu" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.5" id="1Ee-K2-ksP"/>
+                            <constraint firstItem="PXc-1G-dVK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="82d-TU-fXz"/>
+                            <constraint firstItem="95K-sj-FZu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8Ai-fB-gfh"/>
+                            <constraint firstItem="QtC-Lg-1JG" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.4" id="Cdk-Ia-3DU"/>
+                            <constraint firstItem="bbC-hk-GbT" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.75" id="KCj-BP-BFT"/>
+                            <constraint firstItem="GS1-cs-ukZ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.25" id="PCu-U2-2g0"/>
+                            <constraint firstItem="QWN-do-BOJ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.25" id="REk-y2-qpW"/>
+                            <constraint firstItem="PXc-1G-dVK" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="S8i-q2-ggx"/>
+                            <constraint firstItem="bbC-hk-GbT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dd3-8w-bUq"/>
+                            <constraint firstItem="QtC-Lg-1JG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" id="mjV-OL-EpW"/>
+                            <constraint firstItem="QtC-Lg-1JG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nQS-9o-yz4"/>
+                            <constraint firstItem="GS1-cs-ukZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nWf-2N-QuK"/>
+                            <constraint firstItem="QWN-do-BOJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="r17-QC-Q72"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
