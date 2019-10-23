@@ -32,11 +32,11 @@ class ViewController: UIViewController {
     }
     
     func rockChoice() {
-        let computerChoice = randomComputerChoice()
+        guard let computerChoice = randomComputerChoice() else { return }
         yourChoiceLabel.text = "Rock"
-        computerChoiceLabel.text = "\(computerChoice)"
+        computerChoiceLabel.text = computerChoice
         yourChoiceImageView.image = UIImage(named: "Rock")
-        computerChoiceImageView.image = UIImage(named: "\(computerChoiceLabel.text)")
+        computerChoiceImageView.image = UIImage(named: computerChoice)
     }
     
     
