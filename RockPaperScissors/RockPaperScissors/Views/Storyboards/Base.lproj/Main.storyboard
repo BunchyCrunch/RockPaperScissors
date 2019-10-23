@@ -83,6 +83,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="computerChoiceImageView" destination="95K-sj-FZu" id="jCN-jv-Yux"/>
+                        <outlet property="computerChoiceLabel" destination="GS1-cs-ukZ" id="zIh-ca-Pgb"/>
+                        <outlet property="winnerLabel" destination="bbC-hk-GbT" id="DOR-kO-2Eb"/>
+                        <outlet property="yourChoiceImageView" destination="PXc-1G-dVK" id="PXU-rY-Or0"/>
+                        <outlet property="yourChoiceLabel" destination="QWN-do-BOJ" id="Nvc-5D-6Tv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
