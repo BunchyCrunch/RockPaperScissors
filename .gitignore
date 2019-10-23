@@ -28,6 +28,14 @@ xcuserdata/
 *.dSYM.zip
 *.dSYM
 
+## File Typesus
+*.xcuserstate
+*.DS_Store
+
+## Files
+Podfile.lock
+Manifest.lock
+
 ## Playgrounds
 timeline.xctimeline
 playground.xcworkspace
