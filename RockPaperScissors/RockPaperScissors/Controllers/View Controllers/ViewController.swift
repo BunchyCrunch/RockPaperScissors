@@ -12,6 +12,14 @@ class ViewController: UIViewController {
 
     var game: Game = Game()
     
+    //MARK: Outlets
+    @IBOutlet weak var computerChoiceLabel: UILabel!
+    @IBOutlet weak var computerChoiceImageView: UIImageView!
+    @IBOutlet weak var yourChoiceLabel: UILabel!
+    @IBOutlet weak var yourChoiceImageView: UIImageView!
+    @IBOutlet weak var winnerLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -23,11 +31,11 @@ class ViewController: UIViewController {
         return choices.randomElement()
     }
     
-    func rockChoice {
+    func rockChoice() {
         let computerChoice = randomComputerChoice()
         yourChoiceLabel.text = "Rock"
         computerChoiceLabel.text = "\(computerChoice)"
-        youChoiceImageView.image = UIImage(named: "Rock")
+        yourChoiceImageView.image = UIImage(named: "Rock")
         computerChoiceImageView.image = UIImage(named: "\(computerChoiceLabel.text)")
     }
     
