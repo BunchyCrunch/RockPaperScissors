@@ -28,8 +28,10 @@ class ViewController: UIViewController {
         rockChoice()
     }
     @IBAction func paperButtonTapped(_ sender: Any) {
+        paperChoice()
     }
     @IBAction func scissorsButtonTapped(_ sender: Any) {
+        scisscorsChoice()
     }
 
     func randomComputerChoice() -> String? {
@@ -39,30 +41,47 @@ class ViewController: UIViewController {
     
     func rockChoice() {
         guard let computerChoice = randomComputerChoice() else { return }
-        yourChoiceLabel.text = "rock"
-        computerChoiceLabel.text = computerChoice
+        yourChoiceLabel.text = "Your choice is: rock"
+        computerChoiceLabel.text = "Computer choice is: " + (computerChoice)
         yourChoiceImageView.image = UIImage(named: "rock")
         computerChoiceImageView.image = UIImage(named: computerChoice)
+        if computerChoice == game.rock {
+            winnerLabel.text = "YOU TIE!!!"
+        } else if computerChoice == game.paper {
+            winnerLabel.text = "YOU LOSE!!!!"
+        } else {
+            winnerLabel.text = "YOU WIN!!!"
+        }
     }
     
     func paperChoice() {
         guard let computerChoice = randomComputerChoice() else { return }
-        yourChoiceLabel.text = "paper"
-        computerChoiceLabel.text = computerChoice
+        yourChoiceLabel.text = "Your choice is: paper"
+        computerChoiceLabel.text = "Computer choice is: " + computerChoice
         yourChoiceImageView.image = UIImage(named: "paper")
         computerChoiceImageView.image = UIImage(named: computerChoice)
+        if computerChoice == game.rock {
+            winnerLabel.text = "YOU WIN!!!"
+        } else if computerChoice == game.paper {
+            winnerLabel.text = "YOU TIE!!!!"
+        } else {
+            winnerLabel.text = "YOU LOSE!!!"
+        }
     }
     
     func scisscorsChoice() {
         guard let computerChoice = randomComputerChoice() else { return }
-        yourChoiceLabel.text = "scissors"
-        computerChoiceLabel.text = computerChoice
+        yourChoiceLabel.text = "Your choice is: scissors"
+        computerChoiceLabel.text = "Computer choice is: " + computerChoice
         yourChoiceImageView.image = UIImage(named: "scissors")
         computerChoiceImageView.image = UIImage(named: computerChoice)
+        if computerChoice == game.rock {
+            winnerLabel.text = "YOU LOSE!!!"
+        } else if computerChoice == game.paper {
+            winnerLabel.text = "YOU WIN!!!!"
+        } else {
+            winnerLabel.text = "YOU TIE!!!"
+        }
     }
-    
-    
-    
-    
 } // end of class
 
