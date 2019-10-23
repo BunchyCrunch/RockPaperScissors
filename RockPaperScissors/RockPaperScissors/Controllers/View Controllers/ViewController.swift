@@ -73,15 +73,15 @@ class ViewController: UIViewController {
         guard let computerChoice = randomComputerChoice() else { return }
         yourChoiceLabel.text = "Your choice is: scissors"
         computerChoiceLabel.text = "Computer choice is: " + computerChoice
-        yourChoiceImageView.image = UIImage(named: "scissors")
-        computerChoiceImageView.image = UIImage(named: computerChoice)
-        if computerChoice == game.rock {
-            winnerLabel.text = "YOU LOSE!!!"
-        } else if computerChoice == game.paper {
-            winnerLabel.text = "YOU WIN!!!!"
-        } else {
-            winnerLabel.text = "YOU TIE!!!"
-        }
-    }
+//        yourChoiceImageView.image = UIImage(named: "scissors")
+//        computerChoiceImageView.image = UIImage(named: computerChoice)
+//        if computerChoice == game.rock {
+//            winnerLabel.text = "YOU LOSE!!!"
+//        } else if computerChoice == game.paper {
+//            winnerLabel.text = "YOU WIN!!!!"
+//        } else {
+//            winnerLabel.text = "YOU TIE!!!"
+//        }
+//    }
 } // end of class
 
