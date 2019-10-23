@@ -33,12 +33,27 @@ class ViewController: UIViewController {
     
     func rockChoice() {
         guard let computerChoice = randomComputerChoice() else { return }
-        yourChoiceLabel.text = "Rock"
+        yourChoiceLabel.text = "rock"
         computerChoiceLabel.text = computerChoice
-        yourChoiceImageView.image = UIImage(named: "Rock")
+        yourChoiceImageView.image = UIImage(named: "rock")
         computerChoiceImageView.image = UIImage(named: computerChoice)
     }
     
+    func paperChoice() {
+        guard let computerChoice = randomComputerChoice() else { return }
+        yourChoiceLabel.text = "paper"
+        computerChoiceLabel.text = computerChoice
+        yourChoiceImageView.image = UIImage(named: "paper")
+        computerChoiceImageView.image = UIImage(named: computerChoice)
+    }
+    
+    func scisscorsChoice() {
+        guard let computerChoice = randomComputerChoice() else { return }
+        yourChoiceLabel.text = "scissors"
+        computerChoiceLabel.text = computerChoice
+        yourChoiceImageView.image = UIImage(named: "scissors")
+        computerChoiceImageView.image = UIImage(named: computerChoice)
+    }
     
     
     
