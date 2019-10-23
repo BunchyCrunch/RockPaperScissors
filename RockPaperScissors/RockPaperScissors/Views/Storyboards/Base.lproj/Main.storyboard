@@ -21,14 +21,23 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAV-9n-5ge">
                                         <rect key="frame" x="0.0" y="0.0" width="58" height="30"/>
                                         <state key="normal" title="Rock"/>
+                                        <connections>
+                                            <action selector="rockButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e7W-4E-ItG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZS1-Qy-a18">
                                         <rect key="frame" x="83" y="0.0" width="58" height="30"/>
                                         <state key="normal" title="Paper"/>
+                                        <connections>
+                                            <action selector="paperButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t1k-JE-St7"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeT-rQ-SDW">
                                         <rect key="frame" x="166" y="0.0" width="58" height="30"/>
                                         <state key="normal" title="Scissors"/>
+                                        <connections>
+                                            <action selector="scissorsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCU-U7-WB5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
