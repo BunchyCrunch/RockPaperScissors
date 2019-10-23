@@ -24,7 +24,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func rockButtonTapped(_ sender: Any) {
+        rockChoice()
+    }
+    @IBAction func paperButtonTapped(_ sender: Any) {
+    }
+    @IBAction func scissorsButtonTapped(_ sender: Any) {
+    }
 
     func randomComputerChoice() -> String? {
         let choices = [game.rock, game.paper, game.scissors]
@@ -35,9 +41,10 @@ class ViewController: UIViewController {
         guard let computerChoice = randomComputerChoice() else { return }
         yourChoiceLabel.text = "Rock"
         computerChoiceLabel.text = computerChoice
-        yourChoiceImageView.image = UIImage(named: "Rock")
+        yourChoiceImageView.image = UIImage(named: "rock")
         computerChoiceImageView.image = UIImage(named: computerChoice)
     }
+    
     
     
     
