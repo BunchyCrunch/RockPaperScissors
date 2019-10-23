@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         rockChoice()
     }
     @IBAction func paperButtonTapped(_ sender: Any) {
-        dddpaperChoice()
+        paperChoice()
     }
     
     @IBAction func scissorsButtonTapped(_ sender: Any) {
