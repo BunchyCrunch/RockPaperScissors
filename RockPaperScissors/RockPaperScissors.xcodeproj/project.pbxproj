@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26047F6C2360C0C500494D0A /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26047F6B2360C0C500494D0A /* GameModel.swift */; };
 		FCD5A8FA2360BDAE0010E89C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD5A8F92360BDAE0010E89C /* AppDelegate.swift */; };
 		FCD5A8FC2360BDAE0010E89C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD5A8FB2360BDAE0010E89C /* SceneDelegate.swift */; };
 		FCD5A8FE2360BDAE0010E89C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD5A8FD2360BDAE0010E89C /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26047F6B2360C0C500494D0A /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		FCD5A8F62360BDAE0010E89C /* RockPaperScissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD5A8F92360BDAE0010E89C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCD5A8FB2360BDAE0010E89C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26047F6A2360C0AE00494D0A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26047F6B2360C0C500494D0A /* GameModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		FCD5A8ED2360BDAE0010E89C = {
 			isa = PBXGroup;
 			children = (
@@ -56,7 +66,7 @@
 		FCD5A8F82360BDAE0010E89C /* RockPaperScissors */ = {
 			isa = PBXGroup;
 			children = (
-				FCD5A9132360BE010010E89C /* Models */,
+				26047F6A2360C0AE00494D0A /* Models */,
 				FCD5A90F2360BDE50010E89C /* Controllers */,
 				FCD5A9122360BDF60010E89C /* Views */,
 				FCD5A90D2360BDDB0010E89C /* Resources */,
@@ -114,13 +124,6 @@
 				FCD5A9112360BDF10010E89C /* Storyboards */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		FCD5A9132360BE010010E89C /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCD5A8FE2360BDAE0010E89C /* ViewController.swift in Sources */,
+				26047F6C2360C0C500494D0A /* GameModel.swift in Sources */,
 				FCD5A8FA2360BDAE0010E89C /* AppDelegate.swift in Sources */,
 				FCD5A8FC2360BDAE0010E89C /* SceneDelegate.swift in Sources */,
 			);
@@ -342,7 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LNY44KHWJJ;
-				INFOPLIST_FILE = RockPaperScissors/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RockPaperScissors/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,7 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LNY44KHWJJ;
-				INFOPLIST_FILE = RockPaperScissors/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RockPaperScissors/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
