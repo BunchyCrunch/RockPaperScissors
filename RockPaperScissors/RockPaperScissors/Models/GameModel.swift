@@ -15,7 +15,7 @@ class Game {
     var paper: String
     var scissors: String
     
-    init(rock: String, paper: String, scissors: String) {
+    init(rock: String = "rock", paper: String = "paper", scissors: String = "scissors") {
         self.rock = rock
         self.paper = paper
         self.scissors = scissors
